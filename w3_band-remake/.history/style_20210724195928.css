@@ -1,0 +1,52 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main {
+
+}
+#header {
+    background: black;
+    height: 46px;
+}
+#nav {
+    
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav> li> a {
+    color: white;
+
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+#nav .subnav {
+    /*display: none*/
+    position: absolute;
+    background: white;
+}
+#nav .subnav a {
+    color: black;
+}
+#silder {
+    min-height: 500px;
+    background-color: rgb(73, 40, 40)
+}
+#content {
+
+}
+#footer {
+
+}
+
+
+#nav> li >a {
+    background-color: #ccc;
+    color: black
+}
