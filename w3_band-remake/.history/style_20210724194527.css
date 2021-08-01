@@ -1,0 +1,30 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main {
+
+}
+#header {
+    background: black;
+    height: 46px;
+}
+#nav {
+
+}
+#nav li {
+    display: inline-block;
+}
+#nav li a {
+    color: white
+}
+#silder {
+
+}
+#content {
+
+}
+#footer {
+
+}
