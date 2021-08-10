@@ -1,0 +1,105 @@
+:root {
+    --white-color: white;
+    --black-color: black;
+    --text-color: #333;
+    --primary-color: #f53;
+    --star-gold: #FFCE3E;
+    --border-color: #bdbdbd;
+    --header-height: 120px;
+    --navbar-height:34px;
+    --header-width-search-height: calc(var(--header-height) - var(--navbar-height))
+}
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 12px;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display:flex;
+    flex-wrap: wrap;
+}
+/* Btn */
+.btn {
+    min-width: 124px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 0;
+    outline: none;
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+}
+.select-input {
+    min-width: 200px;
+    background-color: var(--white-color);
+    padding: 0 12px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative;   
+    cursor: pointer;
+    z-index: 1;
+}
+.select-input-label {
+    font-size: 1.4rem
+}
+.select-input-icon {
+    font-size: 1.4rem;
+    top: 1px;
+    color: rgb(131,131,131)
+}
+.select-input:hover .select-input__list {
+    display: block;
+}
+.select-input__link {
+    display: block;
+    font-size: 1.4rem;
+    padding: 9px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.select-input__link:hover {
+    color: var(--primary-color)
+}
+
+/* pagination */
+.pagination-item--active.pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.pagination {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.pagination-item {
+    font-size: 1.4rem;
+}
+.pagination-item__link {
+    color: #939393;
+    text-decoration: none;    
+    min-width:40px;
+    height: 30px;
+    display: block;
+    padding: auto
+}
